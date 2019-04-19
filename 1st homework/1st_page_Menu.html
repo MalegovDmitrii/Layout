@@ -6,43 +6,38 @@
 
         <!--Стиль сайта-->
         <style media="screen">
-            body {background: RGB(98,98,98)}
-            button {
-                height:35Px;
-                width:640Px;
-                font-size:20pt;
-                font-family:TimeNewRoman}
-            blockquote  {
+             body {background: RGB(98,98,98)}
+             a{color:white;font-size:14pt;margin-right:10px;}
+             blockquote  {
                 width:640Px;
                 color:RGB(220,220,220);
                 font-size:14pt}
-            h2 {
-                color:RGB(220,220,220)}
+             h2 {color:RGB(220,220,220)}
         </style>
         <!--Описание сайта-->
         <meta name="description" content="Информация приобретенная в ходе прохождения курса">
         <meta name="keywords" content=""><!--Помощник поисковика-->
     </head>
     <body>
+        <div id="hrefimage"> <!--добавляет точки-->
+            <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+          <a href="GIT/git.html">GIT</a>
+          <a href="Layout/html.html">HTML</a>
+          <a href="#">JavaScript</a>
+          <div id="hrefimage" style="float:right"> <!--добавляет точки-->
+              <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+            <a href="2st_Homework/login.html">Авторизация</a>
+            <a href="2st_Homework/registration.html">Регистрация</a>
+          </div>
+        </div>
+
         <div align="center">
-            
             <h1 id="head1"
                 align="center"
                 style="color:RGB(220,220,220)">
                 Шпаргалка по курсу ИТМО "Web-разработка Node.js"
             </h1>
-            <ul style="list-style-type:none;margin-left:-40px">
-                <li><form  action="Git/git.html" method="post">
-                        <button type="submit"name="button">GIT</button>
-                    </form>
-                </li>
-                <li><form  action="Layout/HTML.html" method="post">
-                        <button type="submit"name="button">HTML</button>
-                    </form>
-                </li>
-                <li><button type="button"name="button">JavaScript</button></li>
-                <li><button type="button"name="button">Node.js</button></li>
-            </ul>
+
         </div>
         <div align="center">
             <div>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Страница регистрации</title>
+        <style media="screen">
+            body {background: RGB(98,98,98)}
+             a{color:white;font-size:14pt;margin-right:10px;}
+             form{margin-top:30px;}
+             fieldset{color:white;}
+        </style>
+    </head>
+    <body>
+        <div id="backinform"> <!--добавляет точки-->
+          <a href="../1st_page_Menu.html">На главную страницу</a>
+        </div>
+        <form class=""
+            action="../1st_page_Menu.html"
+            method="get"
+            autocomplete="on"
+            enctype="multipart/form-data"
+            name="RistrForm">
+            <fieldset><!--Рамочка-->
+                    <legend>Введите имя пользователя</legend>
+                    <input  id="textbox"
+                            type="text"
+                            minlength="2"
+                            maxlength="16"
+                            required>
+            </fieldset>
+            <fieldset>
+                    <legend>Добавить изображение</legend>
+                    <input  type="file"
+                    accept="image/*">
+            </fieldset>
+            <fieldset><!--Рамочка-->
+
+                    <legend>Введите адрес электронной почты</legend>
+                    <input  type="email"
+                            name="mail"
+                            placeholder="Введите email"
+                            value=""
+                            required>
+            </fieldset>
+            <fieldset>
+                    <legend>Введите пароль</legend>
+                    <input  type="password"
+                            id="pass1"
+                            name="pass1"
+                            placeholder="Введите пароль"
+                            minlength="8"
+                            maxlength="16"
+                            required>
+                            <!--Алтернатива minlength  -
+                            pattern=".{8,}"
+                            required title="Пароль должен содержать минимум 8 символов"-->
+            </fieldset>
+            <fieldset>
+                    <legend>Повторите пароль</legend>
+                    <input  type="password"
+                            id="pass2"
+                            name="pass2"
+                            placeholder="Подтверждение пароля"
+                            minlength="8"
+                            maxlength="16"
+                            required>
+            </fieldset>
+            <fieldset>
+                    <input type="submit" value="Зарегистрироваться">
+            </fieldset>
+        </form>
+    </body>
+</html>

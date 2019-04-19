@@ -33,6 +33,7 @@
         list-style-type: none; /* Убираем исходные маркеры */
         counter-reset: num; /* Задаём имя счетчика */
        }
+       a{color:white;font-size:14pt;margin-right:10px;}
      ol li::before {
         content: counter(num)'. '; /* Выводим число */
         counter-increment: num; /* Увеличиваем значение счётчика */
@@ -42,6 +43,18 @@
     </head>
     <body>
         <div id="hrefimage"> <!--добавляет точки-->
+            <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+          <a href="../1st_page_Menu.html">На главную страницу</a>
+          <a href="../Layout/html.html">HTML</a>
+          <a href="#">JavaScript</a>
+          <div id="hrefimage" style="float:right"> <!--добавляет точки-->
+              <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+            <a href="../2st_Homework/login.html">Авторизация</a>
+            <a href="../2st_Homework/registration.html">Регистрация</a>
+
+          </div>
+        </div>
+        <div id="hrefimage" style="margin-top:20px"> <!--добавляет точки-->
             <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
           <a style="color:white" href="../1st_page_Menu.html#imageGit">История GIT</a>
           <a style="color:white" href="../1st_page_Menu.html#imagehtml">История HTML</a>

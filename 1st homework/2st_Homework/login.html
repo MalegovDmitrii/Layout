@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Страница авторизации</title>
+        <style media="screen">
+             body {background: RGB(98,98,98)}
+             a{color:white;font-size:14pt;margin-right:10px;margin-bottom:20px}
+             form{margin-top:30px;}
+             fieldset{color:white}
+        </style>
+    </head>
+    <body>
+        <div id="backinform"> <!--добавляет точки-->
+          <a href="../1st_page_Menu.html">На главную страницу</a>
+        </div>
+        <form class=""
+                action="../1st_page_Menu.html"
+                method="get"
+                autocomplete="on"
+                enctype="multipart/form-data"
+                name="LoginForm">
+            <fieldset><!--Рамочка-->
+                    <legend>Адрес электронной почты</legend>
+                    <input type="email"
+                    name="mail"
+                    placeholder="Введите электронную почту"
+                    value=""
+                    required>
+            </fieldset>
+            <fieldset>
+                    <legend>Пароль</legend>
+                    <input  type="password"
+                            name="pass"
+                            placeholder="Введите пароль"
+                            minlength="8"
+                            required>
+                            <!--Алтернатива minlength  -
+                            pattern=".{8,}"
+                            required title="Пароль должен содержать минимум 8 символов"-->
+            </fieldset>
+            <fieldset>
+                    <input type="submit" value="Авторизоваться">
+            </fieldset>
+        </form>
+    </body>
+</html>
