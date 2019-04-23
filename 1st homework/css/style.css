@@ -1,7 +1,7 @@
 @import url("element.css"); /* Подключение стиля Может выть только в начале */
 @import url("gitcss.css"); /* Подключение стиля Может выть только в начале */
 @import url("element.css"); /* Подключение стиля Может выть только в начале */
-body {background: RGB(98,98,98)}
+body.mainBackground {background: RGB(98,98,98)}
 
 .menu li {
     list-style-type: none; /* убирает маркер из списка */
@@ -13,6 +13,9 @@ body {background: RGB(98,98,98)}
     font-size:18pt;
     text-decoration: none;
     font-family: Monotype Corsiva;
+}
+.menu2{
+    float:right
 }
 
 blockquote  {
@@ -93,4 +96,7 @@ nav  {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
 
+}
+div.short p a{
+    color:yellow
 }
