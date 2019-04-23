@@ -3,33 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>Курсы Node.js ИТМО</title>
-
+        <link rel="stylesheet" href="css/style.css"><!--Подгрузка css файла-->
         <!--Стиль сайта-->
-        <style media="screen">
-             body {background: RGB(98,98,98)}
-             a{color:white;font-size:14pt;margin-right:10px;}
-             blockquote  {
-                width:640Px;
-                color:RGB(220,220,220);
-                font-size:14pt}
-             h2 {color:RGB(220,220,220)}
-        </style>
         <!--Описание сайта-->
         <meta name="description" content="Информация приобретенная в ходе прохождения курса">
         <meta name="keywords" content=""><!--Помощник поисковика-->
     </head>
     <body>
-        <div id="hrefimage"> <!--добавляет точки-->
+        <nav> <!--добавляет точки-->
             <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
-          <a href="GIT/git.html">GIT</a>
-          <a href="Layout/html.html">HTML</a>
-          <a href="#">JavaScript</a>
-          <div id="hrefimage" style="float:right"> <!--добавляет точки-->
-              <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
-            <a href="2st_Homework/login.html">Авторизация</a>
-            <a href="2st_Homework/registration.html">Регистрация</a>
-          </div>
-        </div>
+            <ul class="menu">
+                <li><a href="GIT/git.html">GIT</a></li>
+                <li><a href="Layout/html.html">HTML</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><div style="float:right"> <!--добавляет точки-->
+                     <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+                   <a href="2st_Homework/login.html">Авторизация</a>
+                   <a href="2st_Homework/registration.html">Регистрация</a>
+                    <a href="2st_Homework/questionnaire.html">Вопросник</a>
+                 </div> </li>
+                <li></li>
+            </ul>
+        </nav>
 
         <div align="center">
             <h1 id="head1"
@@ -39,33 +34,26 @@
             </h1>
 
         </div>
-        <div align="center">
-            <div>
+        <div>
+            <div class="short"  >
                 <h2>Git — распределённая система управления версиями</h2>
-                <img    id="imageGit"
-                        src="git.jpg"
-                        height="320"
-                        width="640"
-                        alt="Альтернативный текст"
-                ></img>
+                <p><img id="imageGit" src="git.jpg"></img></p>
+                <p><a style="color:yellow" href="#">Материал из Википедии — свободной энциклопедии</a>| 22.04.2019</p>
+
                 <blockquote>
                     Git  — распределённая система управления версиями.
                     Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux,
                     первая версия выпущена 7 апреля 2005 года. На сегодняшний день его поддерживает Джунио Хамано.
-                Среди проектов, использующих Git — ядро Linux, Swift, Android, Drupal, Cairo, GNU Core Utilities, Mesa,
-                Wine, Chromium, Compiz Fusion, FlightGear, jQuery, PHP, NASM, MediaWiki, DokuWiki, Qt, ряд дистрибутивов Linux.
-                Программа является свободной и выпущена под лицензией GNU GPL версии 2. По умолчанию используется TCP порт 9418.
+                    Среди проектов, использующих Git — ядро Linux, Swift, Android, Drupal, Cairo, GNU Core Utilities, Mesa,
+                    Wine, Chromium, Compiz Fusion, FlightGear, jQuery, PHP, NASM, MediaWiki, DokuWiki, Qt, ряд дистрибутивов Linux.
+                    Программа является свободной и выпущена под лицензией GNU GPL версии 2. По умолчанию используется TCP порт 9418.
                 </blockquote>
+                <div class="linkViki"><a href="https://ru.wikipedia.org/wiki/Git">Читать далее</a></div>
             </div>
-            <div>
+            <div class="short">
                 <h2>HTML - язык гипертекстовой разметки</h2>
-                <img    id="imagehtml"
-                        src="html.jpg"
-                        height="320"
-                        width="640"
-                        alt="Альтернативный текст"
-                ></img>
-
+                <p><img id="imagehtml"src="html.jpg"></img></p>
+                <p><a style="color:yellow" href="#">Материал из Википедии — свободной энциклопедии</a>| 22.04.2019</p>
                 <blockquote> HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») —
                     стандартизированный язык разметки документов во Всемирной паутине.
                     Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML
@@ -78,15 +66,12 @@
                     Во всемирной паутине HTML-страницы, как правило, передаются браузерам от сервера по протоколам HTTP или
                     HTTPS, в виде простого текста или с использованием шифрования.
                 </blockquote>
+                <div class="linkViki"><a href="https://ru.wikipedia.org/wiki/HTML">Читать далее</a></div>
             </div>
-            <div>
+            <div class="short" >
                 <h2>JavaScript — мультипарадигменный язык программирования</h2>
-                <img    id="imageJS"
-                        src="js.jpg"
-                        height="320"
-                        width="640"
-                        alt="Альтернативный текст"
-                ></img>
+                <p><img    id="imageJS" src="js.jpg"></img></p>
+                <p><a style="color:yellow" href="#">Материал из Википедии — свободной энциклопедии</a>| 22.04.2019</p>
                 <blockquote> JavaScript — мультипарадигменный язык программирования.
                     Поддерживает объектно-ориентированный, императивный и функциональный стили.
                     Является реализацией языка ECMAScript (стандарт ECMA-262).
@@ -96,9 +81,10 @@
                     прототипное программирование, функции как объекты первого класса.
                     На JavaScript оказали влияние многие языки, при разработке была цель сделать язык похожим на Java,
                     но при этом лёгким для использования непрограммистами. Языком JavaScript не владеет какая-либо компания или
-                    организация, что отличает его от ряда языков программирования, используемых в веб-разработке[~ 1][9].
+                    организация, что отличает его от ряда языков программирования, используемых в веб-разработке.
                     Название «JavaScript» является зарегистрированным товарным знаком компании Oracle Corporation в США.
                 </blockquote>
+                <div class="linkViki"><a href="https://ru.wikipedia.org/wiki/JavaScript">Читать далее</a></div>
             </div>
         </div>
     </body>

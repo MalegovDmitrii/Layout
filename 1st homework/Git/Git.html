@@ -3,88 +3,59 @@
     <head>
         <meta charset="utf-8">
         <title>GIT</title>
-        <style>
-    p {
-        margin-top: 0.5em; /* Отступ сверху */
-        margin-bottom: 0.5em;/* Отступ снизу margin-bottom: 1em;*/
-        color:RGB(220,220,220);;
-        width:720Px;}
-    h1 {
-        color:RGB(220,220,220);}
+        <link rel="stylesheet" href="../css/style.css"><!--Подгрузка css файла-->
 
-    #content { /* #id для добавления свойст для определенного элемента*/
-        font-size:20pt;
-        font-family:TimeNewRoman;
-        position: absolute;
-        left: 300px;}
-    #hrefimage { /* #id для добавления свойст для определенного элемента*/
-        font-size:10pt;
-        font-family:TimeNewRoman;}
-
-    body {background: RGB(98,98,98);}
-
-    blockquote  {
-        width:640Px;
-        margin-top: 0.5em; /* Отступ сверху */
-        margin-bottom: 0.5em;/* Отступ снизу margin-bottom: 1em;*/
-        margin-left: 0em;
-        color:RGB(220,220,220);}
-    #numcontent {
-        list-style-type: none; /* Убираем исходные маркеры */
-        counter-reset: num; /* Задаём имя счетчика */
-       }
-       a{color:white;font-size:14pt;margin-right:10px;}
-     ol li::before {
-        content: counter(num)'. '; /* Выводим число */
-        counter-increment: num; /* Увеличиваем значение счётчика */
-        color:RGB(220,220,220);
-    }
- </style>
     </head>
     <body>
-        <div id="hrefimage"> <!--добавляет точки-->
-            <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
-          <a href="../1st_page_Menu.html">На главную страницу</a>
-          <a href="../Layout/html.html">HTML</a>
-          <a href="#">JavaScript</a>
-          <div id="hrefimage" style="float:right"> <!--добавляет точки-->
-              <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
-            <a href="../2st_Homework/login.html">Авторизация</a>
-            <a href="../2st_Homework/registration.html">Регистрация</a>
 
-          </div>
-        </div>
-        <div id="hrefimage" style="margin-top:20px"> <!--добавляет точки-->
+        <nav class="menu"> <!--добавляет точки-->
             <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
-          <a style="color:white" href="../1st_page_Menu.html#imageGit">История GIT</a>
-          <a style="color:white" href="../1st_page_Menu.html#imagehtml">История HTML</a>
-          <a style="color:white" href="../1st_page_Menu.html#imageJS">История JavaScript</a>
+            <ul>
+                <li><a href="../1st_page_Menu.html">На главную страницу</a></li>
+                <li><a href="../Layout/html.html">HTML</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li> <div id="hrefimage" style="float:right"> <!--добавляет точки-->
+                     <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+                     <a href="../2st_Homework/login.html">Авторизация</a>
+                     <a href="../2st_Homework/registration.html">Регистрация</a>
+                 </div> </li>
+                <li></li>
+            </ul>
+        </nav>
+
+        <div class="menu"> <!--добавляет точки-->
+            <ul>
+                <li><a style="color:white" href="../1st_page_Menu.html#imageGit">История GIT</a></li>
+                <li><a style="color:white" href="../1st_page_Menu.html#imagehtml">История HTML</a></li>
+                <li><a style="color:white" href="../1st_page_Menu.html#imageJS">История JavaScript</a></li>
+            </ul>
       </div>
         <h1 id="head1" align="center">Основы работы с GIT</h1>
         <div id="content">
-            <ol id="numcontent"><!--добавляет нумерацию--><!--Внутри могут быть только теги li-->
+            <ol class="contentGit"><!--добавляет нумерацию--><!--Внутри могут быть только теги li-->
                 <li><p>Создаём пустую папку на диске, например TestGit.</p></li>
                 <li><p>Открываем консоль и переходим в созданную папку <br>
                     <b>«cd C:\TestGit».</b></p></li>
                 <li><p>Настройка git для пользователя. Выполнить команду(some user и some@email.com–ваше <br>
                     имя и почта в github):<br>
-                    <b>Git config--global user.name"someuser"<br>
-                        Git config --global user.emailsome@email.com</b></p></li>
+                    <b>git config--global user.name"someuser"<br>
+                        git config --global user.emailsome@email.com</b></p></li>
                 <li><p>Инициализация нового репозитория. Выполняем команду:<br>
-                    <b>Git init</b></p></li>
+                    <b>git init</b></p></li>
                 <li><p>Создаем файл index.html в папке TestGit с репозиторием и наполняем минимальной вёрсткой.</p></li>
                 <li><p>Выведем информацию о состоянии проекта. Выполнив команду:<br>
-                    <b>Git status</b><br>
+                    <b>git status</b><br>
                     Индексируем изменённый файл. Выполняем команду:<br>
-                    <b>Git add index.html</b></p></li>
+                    <b>git add index.html</b></p></li>
                 <li><p>Фиксируем изменения. Выполнив команду(some_comment_text–описание коммита):<br>
                     <b>git commit -m "some_comment_text"</b><br>
                     Проверим состояние проекта. Выполнив команду:<br>
-                    <b>Git status</b></p></li>
-                <li><blockquote>Переходим в github.com. Создаем новый публичный репозиторий,
-                    например с именем test. Далее добавляем ссылку на удаленный репозиторий.
+                    <b>git status</b></p></li>
+                <li><p>Переходим в github.com. Создаем новый публичный репозиторий,
+                    например с именем test. <br>
+                    Далее добавляем ссылку на удаленный репозиторий.
                     Выполняем команду (origin—это имя сервера по умолчанию, someuser–имя в github):<br>
-                <b>Git init</b></blockquote></li>
+                <b>Git init</b><p></li>
             </ol>
         </div>
 

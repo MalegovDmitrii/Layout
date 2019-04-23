@@ -1,0 +1,96 @@
+@import url("element.css"); /* Подключение стиля Может выть только в начале */
+@import url("gitcss.css"); /* Подключение стиля Может выть только в начале */
+@import url("element.css"); /* Подключение стиля Может выть только в начале */
+body {background: RGB(98,98,98)}
+
+.menu li {
+    list-style-type: none; /* убирает маркер из списка */
+    display: inline; /* Горизонтальный список */
+}
+
+.menu a {
+    color:white;
+    font-size:18pt;
+    text-decoration: none;
+    font-family: Monotype Corsiva;
+}
+
+blockquote  {
+   color:RGB(220,220,220);
+   font-size:12pt;
+   margin-left: 0px;
+}
+
+h2 {
+    color:RGB(220,220,220);
+}
+
+.short {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.short {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+.short {
+    border-radius: 30px solid gray;
+    border-top: 10px  solid gray;
+    border-right: 30px solid gray;
+    border-bottom: 3px solid gray;
+    border-left: 10px solid gray;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+}
+div .short img{
+    height:100px;
+    width:200px;
+    }
+div .short h2{
+    margin-top: 0px;
+}
+.linkViki a{
+    float: right;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: : 5px;
+    text-decoration: none;
+}
+.linkViki{
+    float: right;
+    background-color: RGB(60,60,60);
+    border-top: 2px  solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 30px solid white;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+div a{
+    color:RGB(220,220,220);
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+
+nav  {
+    background-color: RGB(60,60,60);/* RGB(235,174,21); */
+    border-radius: 30px solid gray;
+    border-top: 10px  solid gray;
+    border-right: 10px solid gray;
+    border-bottom: 3px solid gray;
+    border-left: 10px solid gray;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}

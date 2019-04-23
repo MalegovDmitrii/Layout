@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Вопросник</title>
+        <link rel="stylesheet" href="../css/style.css"><!--Подгрузка css файла-->
+    
+    </head>
+    <body class="bodyquest">
+        <nav class="menu"> <!--добавляет точки-->
+            <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+            <ul>
+                <li><a href="../1st_page_Menu.html">На главную страницу</a></li>
+                <li><a href="../GIT/git.html">GIT</a></li>
+                <li><a href="../Layout/html.html">HTML</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li> <div id="hrefimage" style="float:right"> <!--добавляет точки-->
+                     <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+                     <a href="../2st_Homework/login.html">Авторизация</a>
+                     <a href="../2st_Homework/registration.html">Регистрация</a>
+                 </div> </li>
+                <li></li>
+            </ul>
+        </nav>
+        <form class="formQuest" action="index.html" method="post">
+            <fieldset>
+                    <legend>Дата и время начала курсов в ИТМО</legend>
+                    <input  type="datetime-local">
+            </fieldset>
+            <fieldset>
+                    <legend>Количество пошедших занятий</legend>
+                    <input  type="number" step="1" max="75" min="1"><!--Несколько файлов-->
+            </fieldset>
+            <fieldset>
+                <legend>Что такое GIT?</legend>
+                <label for="">
+                <input name="answer[]" type="radio">
+                    База данных</label>
+                <label for="">
+                <input name="answer[]" type="radio">
+                    Язык програмирования</label>
+                <label for="">
+                <input  name="answer[]" type="radio">
+                    Cистема управления версиями</label>
+            </fieldset>
+            <fieldset>
+                    <legend>Выберите из списка команду проверяющую состояние проекта</legend>
+                    <select class="" name="">
+                        <option value="">git init</option>
+                        <option value="">git add</option>
+                        <option value="">git status</option>
+                        <option selected value="">git push -u</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                    <legend>Введите по порядку команды для сохранения изменений проекта в Github</legend>
+                    <textarea name="name" rows="10" cols="80"></textarea><!--cols сколько строчек влезает-->
+            </fieldset>
+            <fieldset><!--Рамочка-->
+
+                    <legend>Введите адрес электронной почты</legend>
+                    <input  type="email"
+                            name="mail"
+                            placeholder="Введите email"
+                            value=""
+                            required>
+            </fieldset>
+            <fieldset>
+                    <legend>Введите пароль</legend>
+                    <input  type="password"
+                            id="pass1"
+                            name="pass1"
+                            placeholder="Введите пароль"
+                            minlength="8"
+                            maxlength="16"
+                            required>
+            </fieldset>
+            <fieldset>
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Сброс">
+            </fieldset>
+        </form>
+    </body>
+</html>

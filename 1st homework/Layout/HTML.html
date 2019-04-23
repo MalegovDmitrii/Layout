@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="../css/style.css"><!--Подгрузка css файла-->
         <style media="screen">
             body {background: RGB(98,98,98)}
              a{color:white;font-size:14pt;margin-right:10px;}
@@ -10,18 +11,21 @@
 
     </head>
     <body>
-        <div id="hrefimage"> <!--добавляет точки-->
+        <nav class="menu"> <!--добавляет точки-->
             <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
-          <a href="../1st_page_Menu.html">На главную страницу</a>
-          <a href="../Layout/html.html">HTML</a>
-          <a href="#">JavaScript</a>
-          <div id="hrefimage" style="float:right"> <!--добавляет точки-->
-              <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
-            <a href="../2st_Homework/login.html">Авторизация</a>
-            <a href="../2st_Homework/registration.html">Регистрация</a>
+            <ul>
+                <li><a href="../1st_page_Menu.html">На главную страницу</a></li>
+                <li><a href="../GIT/git.html">GIT</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li> <div id="hrefimage" style="float:right"> <!--добавляет точки-->
+                     <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
+                     <a href="../2st_Homework/login.html">Авторизация</a>
+                     <a href="../2st_Homework/registration.html">Регистрация</a>
+                 </div> </li>
+                <li></li>
+            </ul>
+        </nav>
 
-          </div>
-        </div>
         <img src="../untitled.png"
               height="300px"
               width="300px"

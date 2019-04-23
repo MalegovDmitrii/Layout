@@ -1,0 +1,36 @@
+
+p {
+    margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 0.5em;/* Отступ снизу margin-bottom: 1em;*/
+    color:RGB(220,220,220);;
+    box-sizing: content-box;
+}
+h1 {
+    color:RGB(220,220,220);
+}
+
+body {
+    background: RGB(98,98,98);
+}
+
+
+.contentGit {
+    list-style-type:decimal;
+}
+.contentGit li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a{
+    color:white;
+    font-size:14pt;
+    margin-right:10px;
+}
+
+p b{
+    display: block;
+    margin-bottom: 5px;
+    font-size:16px;
+    color: yellow;
+}
