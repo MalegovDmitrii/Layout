@@ -1,0 +1,70 @@
+@import url("./grid.css"); /* Подключение стиля Может выть только в начале */
+.container{
+    margin: 5px;
+}
+.box2,.box3,.box4,.box5{
+    height: 33.333vh;
+}
+
+.box6{
+    height: 100vh;
+}
+.content1{
+height: 100%;
+margin-right: 2.5px;
+background-color: RGB(92,233,159);
+
+}
+.content2{
+height: 100%;
+margin-left: 2.5px;
+background-color: RGB(190,20,131);
+}
+
+.content3{
+height: 100%;
+margin-top: 5px;
+background-color: RGB(142,136,138);
+}
+
+.content4{
+height: 100%;
+background-color: RGB(64,0,64);
+margin-top: 10px;
+}
+
+.content5{
+height: 100%;
+background-color: RGB(252,230,73);
+margin-left: 5px;
+margin-right: 5px;
+}
+.content5 ul{
+margin: 0;
+
+}
+.slider{
+    list-style-type: none;
+    padding: 0;
+}
+.slider li{
+    display: none;
+}
+.slider li.active{
+display: block;
+
+}
+.active img{
+    position: relative;
+    width: 100%;
+}
+.textslider{
+    color:white;
+    position: relative;
+    z-index: 2;
+    top: -70px;
+}
+.sliderbox{
+    position: relative;
+    z-index: 1;
+}
