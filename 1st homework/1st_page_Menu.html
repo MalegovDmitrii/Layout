@@ -16,12 +16,22 @@
                 <li><a href="GIT/git.html">GIT</a></li>
                 <li><a href="Layout/html.html">HTML</a></li>
                 <li><a href="#">JavaScript</a></li>
-                <li><a href="4st_homework/grid.html">Grid</a></li>
+                <li><a href="#">Занятия</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Занятие 1</a></li>
+                        <li><a href="#">Занятие 2</a></li>
+                        <li><a href="#">Занятие 3</a></li>
+                        <li><a href="#">Занятие 4</a></li>
+                        <li><a href="4st_homework/grid.html">Grid</a></li>
+                    </ul>
+
+                </li>
                 <li><div class="menu2"> <!--добавляет точки-->
                      <!--Ссылка на индекс "#nameindex"; ссылка на родительский элемент каталога "../name page"-->
                    <a href="2st_Homework/login.html">Авторизация</a>
                    <a href="2st_Homework/registration.html">Регистрация</a>
                    <a href="2st_Homework/questionnaire.html">Вопросник</a>
+                   <a href="#modal">Модальное окно(Оставить отзыв)</a>
                  </div> </li>
                 <li></li>
             </ul>
@@ -84,6 +94,15 @@
                 </blockquote>
                 <div class="linkViki"><a href="https://ru.wikipedia.org/wiki/JavaScript">Читать далее</a></div>
             </div>
+        </div>
+        <div id="modal" class="modal">
+            <form>
+                <div >
+                    <textarea name="name" rows="3" cols="20"></textarea><!--cols сколько строчек влезает-->
+
+                </div>
+                <a href="#">Отправить</a>
+            </form>
         </div>
     </body>
 </html>

@@ -1,6 +1,7 @@
 @import url("element.css"); /* Подключение стиля Может выть только в начале */
 @import url("gitcss.css"); /* Подключение стиля Может выть только в начале */
 @import url("element.css"); /* Подключение стиля Может выть только в начале */
+@import url("pseudo.css"); /* Подключение стиля Может выть только в начале */
 body.mainBackground {background: RGB(98,98,98)}
 
 .menu li {
